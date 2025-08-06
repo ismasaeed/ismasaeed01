@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Isma Saeed | Creative Professional</title>
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Hero */
+    #hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://source.unsplash.com/1600x900/?camera,design,web') center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    #hero p {
+      font-size: 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 0;
+    }
+
+    section h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    /* About */
+    #about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* Services */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .service {
+      width: 300px;
+      margin: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    /* Portfolio */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Contact */
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 12px;
+      background: #111;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      background: #333;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      #hero h1 { font-size: 36px; }
+      .services { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Isma Saeed</h1>
+    <p>Photographer | Graphic Designer | Web Developer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div>
+      <h1>Creating Visual Experiences</h1>
+      <p>Bringing ideas to life through photos, pixels, and code.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm Isma Saeed, a multi-disciplinary creative professional based in [Your Location]. With a strong eye for detail and a passion for visual storytelling, I specialize in photography, graphic design, and building modern, responsive websites. Whether it's capturing unforgettable moments, designing stunning visuals, or coding dynamic web experiences — I do it all with precision and passion.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Photography</h3>
+        <p>Portraits, Events, Products, and Creative Shoots with professional post-processing.</p>
+      </div>
+      <div class="service">
+        <h3>Graphic Design</h3>
+        <p>Logos, Branding, Posters, Social Media, Print Design — tailored to your identity.</p>
+      </div>
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Modern, mobile-first websites using HTML, CSS, JavaScript — fast and SEO-optimized.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <img src="https://source.unsplash.com/random/400x300?photography" alt="Photography">
+      <img src="https://source.unsplash.com/random/400x300?graphicdesign" alt="Design">
+      <img src="https://source.unsplash.com/random/400x300?website" alt="Web Development">
+      <img src="https://source.unsplash.com/random/400x300?portrait" alt="Portrait">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Isma Saeed. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
